@@ -1,4 +1,7 @@
-# @metamask/template-snap-monorepo
+![TruffleBox_dark_4096x2560](https://user-images.githubusercontent.com/34306844/200883962-69c1281f-85a9-4bdb-a3c9-1adf9c29d431.jpg)
+
+
+# @metamask/snap-box
 
 This repository demonstrates how to develop a snap with TypeScript. For detailed instructions, see [the MetaMask documentation](https://docs.metamask.io/guide/snaps.html#serving-a-snap-to-your-local-environment).
 
