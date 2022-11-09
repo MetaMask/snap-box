@@ -1,0 +1,12 @@
+{
+  "ignore": ["README.md"],
+  "commands": {
+    "Compile contracts": "yarn workspace truffle run compile",
+    "Migrate contracts": "yarn workspace truffle run migrate",
+    "Test contracts": "yarn workspace truffle run test",
+    "Start": "yarn start"
+  },
+  "hooks": {
+    "post-unpack": "yarn install"
+  }
+}

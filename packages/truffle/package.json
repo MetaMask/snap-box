@@ -1,0 +1,19 @@
+{
+  "name": "truffle",
+  "version": "0.1.0",
+  "private": true,
+  "license": "(MIT-0 OR Apache-2.0)",
+  "scripts": {
+    "deploy": "truffle deploy",
+    "migrate": "truffle migrate",
+    "start": "node scripts/ganache.js",
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "ganache": "^7.5.0"
+  }
+}
