@@ -22,6 +22,8 @@ npm install -g truffle ganache
 
 You will also need an Infura API key to fork the Ethereum blockchain in your local instance of Ganache. Copy the `.env.dist` file in `packages/truffle/` to a new file `.env` and update the `INFURA_PROJECT_ID` variable with your API key.
 
+Lastly, you can take your Secret Recovery Phrase from MetaMask Flask and put it as the `MNEMONIC_PHRASE` in this same file. This will make your first Ethereum account as the deployer of the test contracts in Ganache and provide you with a balance for the first 10 accounts for local testing. _Remember, you should never share your Secret Recovery Phrase with anyone, and you should never use a Secret Recovery Phrase from any version of MetaMask that you use to custody real funds. This `.env` file is never and should never be uploaded to GitHub (it is explicitly excluded in `.gitignore`). This is only for testing locally with Ganache._
+
 ## Getting Started
 
 Clone the snap-box repository [using this template](https://github.com/MetaMask/snap-box/generate) and setup the development environment:
