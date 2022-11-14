@@ -1,16 +1,30 @@
-# @metamask/template-snap-monorepo
+![box-img-readme](box-img-readme.jpg)
 
-This repository demonstrates how to develop a snap with TypeScript. For detailed instructions, see [the MetaMask documentation](https://docs.metamask.io/guide/snaps.html#serving-a-snap-to-your-local-environment).
+# @metamask/snap-box
+
+This repository is a starter template that combines the [TypeScript Template Snap](https://github.com/MetaMask/template-snap-monorepo) with a [Truffle Box](https://trufflesuite.com/boxes/), for developing and testing snaps that interact with smart contracts.
 
 MetaMask Snaps is a system that allows anyone to safely expand the capabilities of MetaMask. A _snap_ is a program that we run in an isolated environment that can customize the wallet experience.
+
+Truffle Boxes are helpful boilerplates that allow you to focus on what makes your dapp unique. In addition to Truffle, Truffle Boxes can contain other helpful modules, Solidity contracts & libraries, front-end views and more; all the way up to complete example dapps. This box makes it easy to deploy and test contracts with a local Ganache instance, which can be used to test transaction insight snaps or smart contract account snaps.
 
 ## Snaps is pre-release software
 
 To interact with (your) Snaps, you will need to install [MetaMask Flask](https://metamask.io/flask/), a canary distribution for developers that provides access to upcoming features.
 
+## Pre-requisites
+
+Before using this box, install Truffle and Ganache globally:
+
+```shell
+npm install -g truffle ganache
+```
+
+You will also need an Infura API key to fork the Ethereum blockchain in your local instance of Ganache. Copy the `.env.dist` file in `packages/truffle/` to a new file `.env` and update the `INFURA_PROJECT_ID` variable with your API key.
+
 ## Getting Started
 
-Clone the template-snap repository [using this template](https://github.com/MetaMask/template-snap-monorepo/generate) and setup the development environment:
+Clone the snap-box repository [using this template](https://github.com/MetaMask/snap-box/generate) and setup the development environment:
 
 ```shell
 yarn install && yarn start
