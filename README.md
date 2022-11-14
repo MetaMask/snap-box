@@ -2,11 +2,11 @@
 
 # @metamask/snap-box
 
-This repository is a starter template that combines the [TypeScript Template Snap](https://github.com/MetaMask/template-snap-monorepo) with a [Truffle Box](https://trufflesuite.com/boxes/), for developing and testing snaps that interact with smart contracts. 
+This repository is a starter template that combines the [TypeScript Template Snap](https://github.com/MetaMask/template-snap-monorepo) with a [Truffle Box](https://trufflesuite.com/boxes/), for developing and testing snaps that interact with smart contracts.
 
 MetaMask Snaps is a system that allows anyone to safely expand the capabilities of MetaMask. A _snap_ is a program that we run in an isolated environment that can customize the wallet experience.
 
-Truffle Boxes are helpful boilerplates that allow you to focus on what makes your dapp unique. In addition to Truffle, Truffle Boxes can contain other helpful modules, Solidity contracts & libraries, front-end views and more; all the way up to complete example dapps. This box makes it easy to deploy and test contracts with a local Ganache instance, which can be used to test transaction insight snaps or smart contract account snaps. 
+Truffle Boxes are helpful boilerplates that allow you to focus on what makes your dapp unique. In addition to Truffle, Truffle Boxes can contain other helpful modules, Solidity contracts & libraries, front-end views and more; all the way up to complete example dapps. This box makes it easy to deploy and test contracts with a local Ganache instance, which can be used to test transaction insight snaps or smart contract account snaps.
 
 ## Snaps is pre-release software
 
@@ -14,7 +14,7 @@ To interact with (your) Snaps, you will need to install [MetaMask Flask](https:/
 
 ## Pre-requisites
 
-Before using this box, install Truffle and Ganache globally: 
+Before using this box, install Truffle and Ganache globally:
 
 ```shell
 npm install -g truffle ganache
