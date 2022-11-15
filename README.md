@@ -10,7 +10,7 @@ Truffle Boxes are helpful boilerplates that allow you to focus on what makes you
 
 ## Snaps is pre-release software
 
-To interact with (your) snaps, you will need to install [MetaMask Flask](https://metamask.io/flask/), a canary distribution for developers that provides access to upcoming features. You should install Flask in a separate browser profile from any existing MetaMask installation. 
+To interact with (your) snaps, you will need to install [MetaMask Flask](https://metamask.io/flask/), a canary distribution for developers that provides access to upcoming features. You should install Flask in a separate browser profile from any existing MetaMask installation.
 
 ## Pre-requisites
 
@@ -32,7 +32,7 @@ Clone the snap-box repository [using this template](https://github.com/MetaMask/
 yarn install && yarn start
 ```
 
-You are now ready to start modifying the packages to build your snap. You can put smart contracts in `packages/truffle/contracts` and modify the files in `packages/snap` and `packages/site`. Connect MetaMask to your local Ganache instance by going into your settings and changing the network to "Localhost 8545" (if you cannot see it, make sure to click Show test networks). 
+You are now ready to start modifying the packages to build your snap. You can put smart contracts in `packages/truffle/contracts` and modify the files in `packages/snap` and `packages/site`. Connect MetaMask to your local Ganache instance by going into your settings and changing the network to "Localhost 8545" (if you cannot see it, make sure to click Show test networks).
 
 ## Cloning
 
