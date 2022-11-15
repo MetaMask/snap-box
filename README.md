@@ -10,7 +10,7 @@ Truffle Boxes are helpful boilerplates that allow you to focus on what makes you
 
 ## Snaps is pre-release software
 
-To interact with (your) Snaps, you will need to install [MetaMask Flask](https://metamask.io/flask/), a canary distribution for developers that provides access to upcoming features.
+To interact with (your) snaps, you will need to install [MetaMask Flask](https://metamask.io/flask/), a canary distribution for developers that provides access to upcoming features. You should install Flask in a separate browser profile from any existing MetaMask installation. 
 
 ## Pre-requisites
 
@@ -32,13 +32,15 @@ Clone the snap-box repository [using this template](https://github.com/MetaMask/
 yarn install && yarn start
 ```
 
+You are now ready to start modifying the packages to build your snap. You can put smart contracts in `packages/truffle/contracts` and modify the files in `packages/snap` and `packages/site`. Connect MetaMask to your local Ganache instance by going into your settings and changing the network to "Localhost 8545" (if you cannot see it, make sure to click Show test networks). 
+
 ## Cloning
 
 This repository contains GitHub Actions that you may find useful, see `.github/workflows` and [Releasing & Publishing](https://github.com/MetaMask/template-snap-monorepo/edit/main/README.md#releasing--publishing) below for more information.
 
 If you clone or create this repository outside the MetaMask GitHub organization, you probably want to run `./scripts/cleanup.sh` to remove some files that will not work properly outside the MetaMask GitHub organization.
 
-Note that the `action-publish-relase.yml` workflow contains a step that publishes the frontend of this snap (contained in the `public/` directory) to GitHub pages. If you do not want to publish the frontend to GitHub pages, simply remove the step named "Publish to GitHub Pages" in that workflow.
+Note that the `action-publish-release.yml` workflow contains a step that publishes the frontend of this snap (contained in the `public/` directory) to GitHub pages. If you do not want to publish the frontend to GitHub pages, simply remove the step named "Publish to GitHub Pages" in that workflow.
 
 If you don't wish to use any of the existing GitHub actions in this repository, simply delete the `.github/workflows` directory.
 
