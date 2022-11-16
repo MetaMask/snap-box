@@ -1,4 +1,4 @@
-![box-img-readme](box-img-readme.jpg)
+![box-img-readme](https://raw.githubusercontent.com/metamask/snap-box/master/box-img-readme.jpg)
 
 # @metamask/snap-box
 
