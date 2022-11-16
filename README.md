@@ -18,6 +18,16 @@ Before using this box, install Truffle and Ganache globally:
 npm install -g truffle ganache
 ```
 
+### Yarn v3
+
+This box also requires Yarn `v3` or later. If you're using Node.js 16 or later you'll be able to enable it by running the following command:
+
+```shell
+corepack enable
+```
+
+Details on setting up Yarn with earlier versions of Node.js can be found [here](https://yarnpkg.com/getting-started/install).
+
 ## Installation
 
 You can install this box with Truffle:
