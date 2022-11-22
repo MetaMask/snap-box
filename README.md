@@ -10,7 +10,7 @@ Truffle Boxes are helpful boilerplates that allow you to focus on what makes you
 
 ## Pre-requisites
 
-This box requires Yarn v3.x. If you are using Node 16 or later you can  enable it with `corepack enable`. 
+This box requires Yarn v3.x. If you are using Node 16 or later you can enable it with `corepack enable`.
 
 Snaps should work with the latest LTS version of Node.js, but we recommend using the version specified in the `.nvmrc` file. If you use [nvm](https://github.com/nvm-sh/nvm) you can easily switch to the right version by calling `nvm use` at the root of the project.
 
