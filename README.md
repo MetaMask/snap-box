@@ -10,6 +10,10 @@ Truffle Boxes are helpful boilerplates that allow you to focus on what makes you
 
 ## Pre-requisites
 
+Snaps should work with the latest LTS version of Node.js, but we recommend using the version specified in the `.nvmrc` file. If you use [nvm](https://github.com/nvm-sh/nvm) you can easily switch to the right version by calling `nvm use` at the root of the project.
+
+This box uses Yarn v3.x. If you are using Node 16 or later you can enable it with `corepack enable`.
+
 To interact with (your) snaps, you will need to install [MetaMask Flask](https://metamask.io/flask/), a canary distribution for developers that provides access to upcoming features. You should install Flask in a separate browser profile from any existing MetaMask installation.
 
 Before using this box, install Truffle and Ganache globally:
