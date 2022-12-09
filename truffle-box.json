@@ -6,7 +6,5 @@
     "Test contracts": "yarn workspace truffle run test",
     "Start": "yarn start"
   },
-  "hooks": {
-    "post-unpack": "yarn install &>/dev/null"
-  }
+  "hooks": {}
 }
