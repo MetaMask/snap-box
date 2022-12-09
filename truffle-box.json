@@ -7,6 +7,6 @@
     "Start": "yarn start"
   },
   "hooks": {
-    "post-unpack": "yarn install"
+    "post-unpack": "yarn install > &2"
   }
 }
