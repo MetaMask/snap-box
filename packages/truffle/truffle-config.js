@@ -42,15 +42,8 @@ module.exports = {
     // options below to some value.
     //
     development: {
-      provider: () =>
-        new HDWalletProvider({
-          mnemonic: mnemonic,
-          derivationPath: "m/44'/60'/0'/0",
-          providerOrUrl: `http://localhost:8545`,
-        }),
-      host: 'localhost', // Localhost (default: none)
+      host: "127.0.0.1", // Localhost (default: none)
       port: 8545, // Standard Ethereum port (default: none)
-      chain_id: 1337,
       network_id: '*', // Any network (default: none)
     },
     //
