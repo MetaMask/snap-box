@@ -27,7 +27,7 @@ npm install -g truffle ganache
 You can install this box with Truffle:
 
 ```shell
-truffle unbox metamask/snap-box
+truffle unbox metamask/snap-box <dir_name>
 ```
 
 Alternatively, you can clone the snap-box repository [using this GitHub template](https://github.com/MetaMask/snap-box/generate).
