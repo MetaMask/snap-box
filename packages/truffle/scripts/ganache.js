@@ -6,9 +6,7 @@ const options = {
   wallet: {
     mnemonic: process.env.MNEMONIC_PHRASE,
   },
-  fork: {
-    url: `https://mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
-  },
+  fork: process.env.INFURA_PROJECT_ID ? {url: `https://mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`} : "mainnet",
 };
 const server = ganache.server(options);
 const PORT = 8545;
