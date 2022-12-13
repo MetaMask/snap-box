@@ -3,13 +3,13 @@ const ganache = require('ganache');
 require('dotenv').config({});
 
 const options = {
-  wallet: {
-    mnemonic: process.env.MNEMONIC_PHRASE,
-  },
-  fork: {
-    url: `https://mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
-  },
+  fork: process.env.INFURA_PROJECT_ID ? {url: `https://mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`} : "mainnet",
 };
+if(process.env.MNEMONIC_PHRASE) { 
+  options.wallet = { 
+    mnemonic: process.env.MNEMONIC_PHRASE
+  }; 
+}
 const server = ganache.server(options);
 const PORT = 8545;
 
@@ -25,4 +25,8 @@ server.listen(PORT, async (err) => {
   });
 
   console.log(accounts);
+
+  if(!process.env.MNEMONIC_PHRASE) { 
+    console.log("mnemonic used: " + provider.getOptions().wallet?.mnemonic); 
+  }
 });
