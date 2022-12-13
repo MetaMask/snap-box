@@ -27,6 +27,6 @@ server.listen(PORT, async (err) => {
   console.log(accounts);
 
   if(!process.env.MNEMONIC_PHRASE) { 
-    console.log("mnemonic used: "+provider.getOptions().wallet?.mnemonic); 
+    console.log("mnemonic used: " + provider.getOptions().wallet?.mnemonic); 
   }
 });
