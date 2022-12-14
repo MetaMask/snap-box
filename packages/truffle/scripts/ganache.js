@@ -17,16 +17,17 @@ server.listen(PORT, async (err) => {
   if (err) throw err;
 
   console.log(`ganache listening on port ${PORT}...`);
+  console.log('accounts created');
+  const provider = server.provider; 
 
-  const provider = server.provider;
-  const accounts = await provider.request({
-    method: 'eth_accounts',
-    params: [],
-  });
-
-  console.log(accounts);
-
-  if(!process.env.MNEMONIC_PHRASE) { 
-    console.log("mnemonic used: " + provider.getOptions().wallet?.mnemonic); 
+  if(process.env.MNEMONIC_PHRASE) { 
+    const accounts = await provider.request({
+      method: 'eth_accounts',
+      params: [],
+    });
+    console.log(accounts);
+  } else { 
+    console.log(`mnemonic used: {provider.getOptions().wallet?.mnemonic}`); 
+    console.log(provider.getInitialAccounts());
   }
 });
