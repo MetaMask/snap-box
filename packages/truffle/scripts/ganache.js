@@ -27,7 +27,7 @@ server.listen(PORT, async (err) => {
     });
     console.log(accounts);
   } else { 
-    console.log(`mnemonic used: {provider.getOptions().wallet?.mnemonic}`); 
+    console.log(`mnemonic used: ${provider.getOptions().wallet?.mnemonic}`);
     console.log(provider.getInitialAccounts());
   }
 });
